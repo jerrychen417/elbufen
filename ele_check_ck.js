@@ -162,7 +162,9 @@ async function _0x179175(data, context, options) {
                         const lakeyah = await DisableCk(houda);
                         if (lakeyah.code === 200) {
                             console.log("第", mackala + 1, "账号失效！已🈲用");
-                            sendWxPusherMessage(remarks,wxUid);
+                            if(wxUid !=null){
+                                sendWxPusherMessage(remarks,wxUid);
+                            }else{console.log("uid未获取到");}
                         } else {
                             console.log("第", mackala + 1, "账号失效！请重新登录！！！😭");
                         }
@@ -179,7 +181,9 @@ async function _0x179175(data, context, options) {
                             const jericca = await DisableCk(houda);
                             if (jericca.code === 200) {
                                 console.log("第", mackala + 1, "账号失效！已🈲用");
-                                sendWxPusherMessage(remarks,wxUid);
+                                if(wxUid !=null){
+                                    sendWxPusherMessage(remarks,wxUid);
+                                }else{console.log("uid未获取到");}
                             } else {
                                 console.log("第", mackala + 1, "账号失效！请重新登录！！！😭");
                             }
